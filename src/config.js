@@ -1,0 +1,54 @@
+const POLYGON_WEB3_PROVIDER = process.env.POLYGON_WEB3_PROVIDER;
+const ETHEREUM_WEB3_PROVIDER = process.env.GOERLI_ALCHEMY_URL;
+const BINANCE_WEB3_PROVIDER = process.env.BINANCE_WEB3_PROVIDER;
+
+const POLYGON_CONTRACT_ADDRESS = process.env.POLYGON_CONTRACT_ADDRESS;
+const ETHEREUM_CONTRACT_ADDRESS = process.env.ETHEREUM_CONTRACT_ADDRESS;
+const BINANCE_CONTRACT_ADDRESS = process.env.BINANCE_CONTRACT_ADDRESS;
+
+const HASHICORP_VAULT_OPTIONS = {
+  apiVersion: 'v1', // default
+  endpoint: process.env.VAULT_URL, // default
+  token: process.env.VAULT_TOKEN, // optional client token; can be fetched after valid initialization of the serve
+};
+
+const MATIC_BASE_URL = process.env.MATIC_BASE_URL;
+const MATIC_INFURA_URL = process.env.POLYGON_TESTNET_INFURA_URL;
+const GOERLI_INFURA_URL = process.env.GOERLI_ALCHEMY_URL;
+const BSC_URL = process.env.BINANCE_WEB3_PROVIDER;
+
+const BSC_KEY = process.env.BSC_API_KEY;
+
+const MONGODB_URL = process.env.MONGODB_URL;
+
+const AWS_CLOUDWATCH_CONFIG = {
+  LOG_GROUP_NAME: process.env.LOG_GROUP_NAME,
+  LOG_GROUP_STREAM: process.env.LOG_GROUP_STREAM,
+  ACCESS_KEY: process.env.ACCESS_KEY,
+  SECRET_KEY: process.env.SECRET_KEY,
+  REGION: process.env.REGION,
+};
+
+const LOGGING_SERVICE = process.env.LOGGING_SERVICE;
+const PORT = process.env.PORT;
+
+const REDIS_URL = process.env.REDIS_URL;
+module.exports = {
+  POLYGON_WEB3_PROVIDER,
+  ETHEREUM_WEB3_PROVIDER,
+  BINANCE_WEB3_PROVIDER,
+  POLYGON_CONTRACT_ADDRESS,
+  ETHEREUM_CONTRACT_ADDRESS,
+  BINANCE_CONTRACT_ADDRESS,
+  HASHICORP_VAULT_OPTIONS,
+  MATIC_BASE_URL,
+  MONGODB_URL,
+  AWS_CLOUDWATCH_CONFIG,
+  LOGGING_SERVICE,
+  REDIS_URL,
+  MATIC_INFURA_URL,
+  GOERLI_INFURA_URL,
+  BSC_KEY,
+  BSC_URL,
+  PORT,
+};
